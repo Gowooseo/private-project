@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>환율 예측 결과</title>
+</head>
+<body>
+    <h1>{{ date }} 예측 환율</h1>
+    <ul>
+        {% for col, rate in predictions.items() %}
+        <li>{{ col }}: {{ rate }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
